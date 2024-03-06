@@ -1,0 +1,404 @@
+/* font-family: "Open Sans", sans-serif; body */
+/* font-family: "Poppins", sans-serif; headings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    min-width: 375px;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 2.9rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    box-shadow: 0 0 15px hsla(0, 0%, 0%, 10%);
+    transition: opacity .5s;
+}
+
+button:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+button.transparent {
+    background-color: hsl(0, 100%, 100%);
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    width: 10vw;
+    max-width: 12rem;
+    min-width: 6rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+button.pink {
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 100%, 100%);
+    width: 24rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+.firstblock {
+    width: 100%;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.firstblock p {
+    width: 50%;
+    margin: 2rem;
+}
+
+.firstblock img {
+    width: 90%;
+    margin: 5rem;
+}
+
+.firstblock .summary {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.summary .number {
+    width: fit-content;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.number .largenumber {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.number aside {
+    opacity: .5;
+    font-size: 1.5rem;
+}
+
+.number:first-child:before {
+    content: url('./images/icon-communities.svg');
+    text-align: start;
+}
+
+.number:nth-child(2):before {
+    content: url('./images/icon-messages.svg');
+    text-align: start;
+}
+
+.maintable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.maintable h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.card .textarea, .card .imgarea {
+    padding: 2rem;
+    width: 50%;
+}
+
+.card .textarea {
+    padding-left: 6rem;
+}
+
+.c1 .imgarea, .c3 .imgarea {
+    padding-right: 6rem;
+}
+
+
+.card img {
+    transform: scale(90%);
+    width: 100%;
+}
+
+.c1, .c3 {
+    flex-direction: row-reverse;
+    background-color: hsl(207, 100%, 98%);
+}
+
+.c2 {
+    margin: 6rem 0;
+    width: 100%;
+}
+
+.wave { 
+    width: 100%;
+}
+
+.ready {
+    margin: 8rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.ready h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsla(0, 100%, 100%, 80%);
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 4rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+footer .left, footer .right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    color: hsla(0, 100%, 100%, 90%);
+    font-size: 1.5rem;
+}
+
+.left > a img {
+    margin-right: 1rem;
+}
+
+.left > a {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+#email {
+    height: 3rem;
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+
+#email:invalid {
+    outline: 2px solid hsl(0, 100%, 50%);
+}
+
+.submitbtn {
+    height: 3rem;
+    margin-left: 1.5rem;
+    width: 30%;
+    min-width: 7rem;
+    padding: 1rem 0;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 100%, 100%);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    transition: background-color .5s;
+    font-weight: 600;
+}
+
+.submitbtn:hover {
+    background-color: hsla(322, 100%, 77%, 90%);
+    cursor: pointer;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(0, 100%, 100%);
+}
+
+.fill path {
+    fill: hsla(0, 100%, 100%, 90%);
+}
+
+.social img {
+    width: 30px;
+    margin: 3rem .5rem 0 .5rem;
+}
+
+footer a:hover {
+    filter: invert(55%) sepia(58%) saturate(3988%) hue-rotate(177deg) brightness(101%) contrast(90%);
+}
+
+footer p {
+    margin: 1.5rem 10rem 1.5rem 0;
+}
+
+#wavefooter {
+    width: 100%;
+    position: relative;
+    top: 1rem
+}
+
+@media only screen and (max-width: 900px) {
+    .maintable h2 {
+        font-size: 2rem;
+    }
+
+    .firstblock {
+        padding: 9rem 4rem;
+    }
+
+    .ready {
+        padding: 0 3rem;
+    }
+
+    .firstblock p {
+        width: 90%;
+    }
+
+    footer p {
+        margin: 1.5rem 3rem 1.5rem 0;
+    }
+
+    .summary {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    .submitbtn {
+        margin-left: auto;
+    }
+
+    header img {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    .card .textarea, .card .imgarea {
+        padding: 3rem;
+        width: 100%;
+    }
+
+    .ready h2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    footer .left, footer .right {
+        width: 100%;
+    }
+
+    footer .right {
+        margin-bottom: 4rem;
+    }
+
+    footer p {
+        margin: 1.5rem 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button.pink {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .ready h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .firstblock {
+        padding: 9rem 2rem;
+    }
+
+    .number {
+        transform: scale(75%);
+    }
+}
